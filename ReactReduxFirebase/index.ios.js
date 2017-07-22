@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class reactReduxFirebase extends Component {
+export default class ReactReduxFirebase extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('reactReduxFirebase', () => reactReduxFirebase);
+AppRegistry.registerComponent('ReactReduxFirebase', () => ReactReduxFirebase);
