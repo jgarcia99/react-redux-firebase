@@ -15,7 +15,7 @@ import { Provider } from 'react-redux';
 import {createStore} from 'redux';
 import Login from './Login';
 import Loader from './Loader';
-import PeopleList from './PeopleList';
+import Navigation from './Navigation';
 import reducers from '../reducers/PeopleReducer';
 
 const styles = StyleSheet.create({
@@ -57,7 +57,7 @@ export default class App extends Component {
   renderInitalView() {
     switch(this.state.loggedIn) {
       case true:
-        return <PeopleList />;
+        return <Navigation />;
       case false:
         return <Login />;
       default:
